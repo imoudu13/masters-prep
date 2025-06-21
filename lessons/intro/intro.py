@@ -6,6 +6,7 @@
 5. functions
 6. if statements
 7. loops (while, for)
+8. input
 """
 
 # snake case variable naming
@@ -27,7 +28,7 @@ def moella(x, y, z):
     print(x * y + z)
 
 # how to call the function
-moella()
+moella(1, 2, 3)
 
 x = 10
 
@@ -78,3 +79,15 @@ While loops
 """
 while y < 100:
     y += 1
+
+
+"""Input"""
+# To accept user input, you can use the input function like so:
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+
+# it will wait for you to type something and hit enter. the value will be saved as a string
+# if you need to do math with it you can change it to an number using the int() function
+age = int(age)
+
+print("Hello,", name, ". You are", age, "years old")
